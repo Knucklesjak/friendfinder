@@ -37,10 +37,11 @@ module.exports = function(app) {
       }
     }
 
-    // after finding match, add user to friend array
+    // After match is found, push to the array on friend.js
     friends.push(user);
 
     // send back to browser the best friend match
     res.json(friends[bestFriendIndex]);
   });
 };
+
